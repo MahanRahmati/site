@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="https://code.iconify.design/iconify-icon/3.0.2/iconify-icon.min.js"></script>
+  </head>
+  <body
+    class="bg-bg-light dark:bg-bg-dark text-fg-light dark:text-fg-dark min-h-screen font-sans"
+  >
+    <nav
+      class="sticky top-0 z-50 bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-md text-fg-light dark:text-fg-dark border-b border-border-light dark:border-border-dark"
+    >
+      <div class="w-full px-2 py-2">
+        <div class="flex justify-between items-center">
+          <div class="flex-shrink-0 px-2">
+            <span class="text-lg font-bold">Name</span>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <a
+              href="mailto:email@example.com"
+              class="flex items-center gap-1 text-sm font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              aria-label="Email"
+            >
+              <iconify-icon
+                icon="mingcute:mail-line"
+                class="text-lg"
+              ></iconify-icon>
+              <span class="hidden md:inline">Email</span>
+            </a>
+
+            <a
+              href="https://github.com/username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-1 text-sm font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              aria-label="GitHub"
+            >
+              <iconify-icon
+                icon="mingcute:github-line"
+                class="text-lg"
+              ></iconify-icon>
+              <span class="hidden md:inline">GitHub</span>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-1 text-sm font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <iconify-icon
+                icon="mingcute:linkedin-line"
+                class="text-lg"
+              ></iconify-icon>
+              <span class="hidden md:inline">LinkedIn</span>
+            </a>
+
+            <a
+              href="https://x.com/username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-1 text-sm font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              aria-label="Twitter"
+            >
+              <iconify-icon
+                icon="mingcute:social-x-line"
+                class="text-lg"
+              ></iconify-icon>
+              <span class="hidden md:inline">Twitter</span>
+            </a>
+
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-lg bg-bg-dark/5 dark:bg-bg-light/5 hover:bg-bg-dark/10 dark:hover:dark:bg-bg-light/10 transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              <iconify-icon
+                icon="mingcute:sun-fill"
+                class="hidden dark:block text-fg-dark text-xl"
+              ></iconify-icon>
+              <iconify-icon
+                icon="mingcute:moon-fill"
+                class="block dark:hidden text-fg-light text-xl"
+              ></iconify-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+      <section class="text-center py-20">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">Welcome</h1>
+        <p
+          class="text-xl text-fg-light dark:text-fg-dark max-w-2xl mx-auto mb-8"
+        >
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
+          per conubia nostra inceptos himenaeos.
+        </p>
+      </section>
+    </main>
+
+    <footer
+      class="bg-card-light dark:bg-card-dark text-fg-light dark:text-fg-dark border-t border-border-light dark:border-border-dark"
+    >
+      <div class="w-full px-4 py-4 text-center">
+        <p>&copy; 2025 Name</p>
+      </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+  </body>
+</html>
