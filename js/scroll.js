@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       threshold: 0.1,
-      rootMargin: '-50px 0px 0px 0px'
-    }
+      rootMargin: '-50px 0px 0px 0px',
+    },
   )
 
   observer.observe(heroSection)
