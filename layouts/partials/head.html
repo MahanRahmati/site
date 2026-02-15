@@ -3,7 +3,7 @@
 <title>{{ .Site.Title }}</title>
 
 {{ $css := resources.Get "css/main.css" | css.PostCSS }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $css.Permalink }}" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

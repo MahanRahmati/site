@@ -16,7 +16,7 @@
 
   <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
     {{ range .Params.screenshots }}
-    <img src="{{ printf "/images/%s" . | relURL }}" alt="{{ $.Title }} screenshot" class="h-72 md:h-96 w-auto rounded-lg object-cover snap-center shrink-0" />
+    <img src="{{ printf "images/%s" . | relURL }}" alt="{{ $.Title }} screenshot" class="h-72 md:h-96 w-auto rounded-lg object-cover snap-center shrink-0" />
     {{ end }}
   </div>
 
