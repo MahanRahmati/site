@@ -1,0 +1,19 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'The Site'
+
+[params]
+name = 'Mahan Rahmati'
+email = 'mahan.rahmati@proton.me'
+tagline = "Mahan? Of course I know him. He's me."
+github = 'https://github.com/MahanRahmati'
+linkedin = 'https://linkedin.com/in/mahan-rahmati'
+twitter = 'https://x.com/MahanRahmati1'
+resumePDF = '/Mahan_Rahmati_Resume.pdf'
+resumeMarkdown = '/Mahan_Rahmati_Resume.md'
+
+[build]
+writeStats = true
+
+[imaging]
+quality = 100

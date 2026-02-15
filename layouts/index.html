@@ -1,0 +1,7 @@
+{{ define "main" }} {{ partial "hero.html" . }} {{ with .Site.GetPage "about" }}
+{{ partial "about.html" . }} {{ end }} {{ with .Site.GetPage "skills" }} {{
+partial "skills.html" . }} {{ end }} {{ partial "opensource.html" . }} {{ with
+.Site.GetPage "experience/_index.md" }} {{ partial "experience.html" . }} {{ end
+}} {{ with .Site.GetPage "education" }} {{ partial "education.html" . }} {{ end
+}} {{ with .Site.GetPage "certifications" }} {{ partial "certifications.html" .
+}} {{ end }} {{ end }}
