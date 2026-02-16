@@ -1,6 +1,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.description }}" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property="og:title" content="{{ .Site.Title }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta property="og:image" content="{{ printf "images/%s" .Site.Params.image | absURL }}" />
 
 {{ $css := resources.Get "css/main.css" | css.PostCSS }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" />

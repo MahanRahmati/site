@@ -1,11 +1,13 @@
 baseURL = 'https://mahanrahmati.github.io/site/'
 languageCode = 'en-us'
-title = 'The Site'
+title = 'Mahan Rahmati'
 
 [params]
 name = 'Mahan Rahmati'
 email = 'mahan.rahmati@proton.me'
 tagline = "Mahan? Of course I know him. He's me."
+description = 'Senior Software Engineer. Passionate about building beautiful, performant applications and tools.'
+image = 'og-image.png'
 github = 'https://github.com/MahanRahmati'
 linkedin = 'https://linkedin.com/in/mahan-rahmati'
 twitter = 'https://x.com/MahanRahmati1'
